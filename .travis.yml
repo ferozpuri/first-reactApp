@@ -4,8 +4,8 @@ services:
 
 
 before_install:
-  - docker build -t ferozpuri/first-reactApp -f Dockerfile.dev .
+  - docker build -t ferozpuri/first-reactapp -f Dockerfile.dev .
 
 
 script:
-  - docker run ferozpuri/first-reactApp npm run test -- --coverage
+  - docker run ferozpuri/first-reactapp npm run test -- --coverage
