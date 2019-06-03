@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+
+before_install:
+  - docker build -t ferozpuri/first-reactApp -f Dockerfile.dev .
+
+
+script:
+  - docker run ferozpuri/first-reactApp npm run test -- --coverage
